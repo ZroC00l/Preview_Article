@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -40,18 +42,22 @@
   		top:5%;
   		right:100px;
   		left:270px;
+  		font-family:'Manrope',sans-serif;
+  		font-weight:700;
   	}
   	p{
   		position:absolute;
   		top:25%;
   		right:100px;
   		left:270px;
+  		font-family: 'Manrope',sans-serif;
+  		font-weight: 500;
   	}
 
   	.active-share{
   		position:aboslute;
   		left:320px;
-  		top:75%;
+  		top:70%;
 
   	}
 
@@ -65,9 +71,16 @@
   		transform: scale(1.5);
   	}
 
-  	#share-icon{
+  	#date{
   		position:absolute;
   		top:80%;
+  		left:20px;
+  		color:hsl(210, 46%, 80%);
+  	}
+
+  	#share-icon{
+  		position:absolute;
+  		top:78%;
   		right:100px;
   		height:25px;
   		width:25px;
@@ -111,7 +124,8 @@
 	<h3>Shift the overall look and feel by adding these wonderful 
   	touches to furniture in your home
   	</h3>
-  	
+  	<br>
+  	<br>
   	<p>
   	Ever been in a room and felt like something was missing? Perhaps 
   	it felt slightly bare and uninviting. I’ve got some simple tips 
@@ -123,7 +137,7 @@
   	
   	<p class="active-share">
   	Michelle Appleton
-  	28 Jun 2020
+  	<span id="date">28 Jun 2020</span>
 	</p>
 
 	<div id="share-icon">
