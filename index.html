@@ -99,6 +99,35 @@
   		transform: scale(1.5);
 
   	}
+
+  	.facebook-icon .twitter-icon .pinterest-icon{
+  		height: 8px;
+  		width: 8px;
+  	}
+
+  	.drop-down-content{
+  		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 40px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		border-radius: 10%;
+		z-index: 1;
+  	}
+  	.drop-down-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		border-radius: 15%;
+		display: block;
+
+	}
+
+	.drop-down-content a:hover {background-color: #ddd;}
+
+	#share-icon:hover .drop-down-content {display: block;}
+
+	#share-icon:hover .share-icon-img {background-color: #3e8e41;}
   
 
     .attribution { 
@@ -124,7 +153,7 @@
 	<h3>Shift the overall look and feel by adding these wonderful 
   	touches to furniture in your home
   	</h3>
-  	
+
   	<p>
   	Ever been in a room and felt like something was missing? Perhaps 
   	it felt slightly bare and uninviting. I’ve got some simple tips 
@@ -135,13 +164,17 @@
   	<img id="img-icon" src="images/avatar-michelle.jpg" alt="image-icon-holder">
   	
   	<p class="active-share">
-  	Michelle Appleton
+  		Michelle Appleton
   	<span id="date">28 Jun 2020</span>
 	</p>
 
 	<div id="share-icon">
 		<img class="share-icon-img" src="images/icon-share.svg" alt="share-icon">
-			
+		<div class="drop-down-content">
+			<a href="http://www.facebook.com/" target="_blank"><img class="facebook-icon" alt="facebook-link" src="images/icon-facebook.svg"></a>
+			<a href="http://www.twitter.com/" target="_blank"><img class="twitter-icon" alt="twitter-link" src="images/icon-twitter.svg"></a>
+			<a href="http://www.pinterest.com/" target="_blank"><img class="pinterest-icon" alt="pinterest-link" src="images/icon-pinterest.svg"></a>
+		</div>			
 	</div>
 
 
