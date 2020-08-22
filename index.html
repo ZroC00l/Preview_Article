@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  	body{
+  		background-color: hsl(210, 46%, 95%);
+  	}
+  	
+  	.card{
+
+  		background-color:white;
+  		width:800px;
+  		height:300px;
+  		position:absolute;
+  		left:20%;
+  		right:40%;
+  		top:25%;
+  		border-radius:10px;
+
+
+  	}
+  	.img{
+  		width:250px;
+  		height:300px;
+  		border-top-left-radius:10px;
+  		border-bottom-left-radius:10px;
+
+  	}
+  	h3{
+  		position: absolute;
+  		top:5%;
+  		right:100px;
+  		left:270px;
+  	}
+  	p{
+  		position:absolute;
+  		top:25%;
+  		right:100px;
+  		left:270px;
+  	}
+
+  	.active-share{
+  		position:aboslute;
+  		top:75%;
+
+  	}
+
+
+
+    .attribution { 
+    	font-size: 11px; 
+    	text-align: center; 
+    	position:absolute;
+    	bottom:10px;
+    	left:29%;
+    	right:40%;
+    }
+    .attribution a { 
+    	color: hsl(228, 45%, 44%); 
+    }
+  </style>
+</head>
+<body>
+
+
+	<div class="card">
+	<img class="img" src="images/drawers.jpg" alt="content-image">		
+
+
+	<h3>Shift the overall look and feel by adding these wonderful 
+  	touches to furniture in your home
+  	</h3>
+  	
+  	<p>
+  	Ever been in a room and felt like something was missing? Perhaps 
+  	it felt slightly bare and uninviting. I’ve got some simple tips 
+  	to help you make any room feel complete.
+  	</p>
+
+  	<p class="active-share">
+  	Michelle Appleton
+  	28 Jun 2020
+
+  	Share
+	</p>
+
+	</div>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Uncle_Groovey</a>.
+  </div>
+</body>
+</html>
